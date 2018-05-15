@@ -1,0 +1,12 @@
+{
+  "name": "qualitypro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss assets/css/qualitypro.css -w"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
