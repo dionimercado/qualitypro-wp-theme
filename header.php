@@ -7,31 +7,16 @@
   <?php wp_head() ?>
 </head>
 <body <?php body_class() ?>>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-    <a class="navbar-brand" href="<?php echo home_url() ?>">Quality<span>Professional</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#qualityproNav" aria-controls="qualityproNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand ml-3 ml-lg-5" href="<?php echo home_url() ?>">Quality<span>Professional</span></a>
+      <button class="navbar-toggler border-0 p-0 mr-3" type="button" data-toggle="collapse" data-target="#qualityproNav" aria-controls="qualityproNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="qualityproNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown09">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse mr-lg-5" id="qualityproNav">
+        <?php wp_nav_menu( array( 'theme_location' => 'qualitypro', 'container' => '', 'menu_id' => '', 'menu_class' => 'navbar-nav ml-auto', 'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback', 'walker' => new WP_Bootstrap_Navwalker() ) ); ?>
+      </div>
     </div>
   </nav>
+  <main>

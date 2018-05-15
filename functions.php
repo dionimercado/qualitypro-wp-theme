@@ -22,7 +22,7 @@ add_action( 'after_setup_theme', 'qualitypro_theme_features' );
 function qualitypro_navigation_menus() {
 
 	$locations = array(
-		'Quality Pro' => __( 'Main menu', 'qualitypro' ),
+		'qualitypro' => __( 'Main menu', 'qualitypro' ),
 	);
 	register_nav_menus( $locations );
 
@@ -32,6 +32,9 @@ add_action( 'init', 'qualitypro_navigation_menus' );
 
 // Register Style
 function qualitypro_styles() {
+
+	wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900|Open+Sans:300,400,70', false, null );
+	wp_enqueue_style( 'google-fonts' );
 
 	wp_register_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css', false, '4.1.1' );
 	wp_enqueue_style( 'bootstrap' );
@@ -53,3 +56,6 @@ function qualitypro_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'qualitypro_scripts' );
+
+// Register Custom Navigation Walker
+require_once get_stylesheet_directory() . '/inc/class-wp-bootstrap-navwalker.php';
