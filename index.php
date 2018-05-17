@@ -21,7 +21,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-10 mx-auto">
-        <h2 class="mb-4 mb-lg-5"><?php _e( 'Your new job starts right here.' ) ?></h2>
+        <h2 class="mb-4 mb-lg-5"><?php _e( 'Your new job starts right here' ) ?></h2>
         <p>Hey, you deserve a chance to find a good job. To work on your terms. To better your situation. To be appreciated. To be a provider. Now, maybe you've tried staffing agencies before. But this is different. We have thousands of jobs across the country. And you just need one good one. So, what are you waiting for? Find it today and get to work!</p>
       </div>
     </div>
@@ -71,7 +71,7 @@
   </div>
 </section>
 
-<section id="testimonials" class="testimonials bg-white border-top text-center">
+<section id="instagram-feed" class="instagram-feed bg-white border-top text-center">
   <div class="container">
     <div class="row">
       <div class="col-12">
