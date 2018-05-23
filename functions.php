@@ -81,3 +81,10 @@ require_once get_stylesheet_directory() . '/inc/posttypes.php';
 
 // Register Custom Navigation Walker
 require_once get_stylesheet_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+
+
+// Gravity Forms Submit Button Add CSS Class
+add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
+function form_submit_button($button, $form) {
+  return '<input type="submit" class="btn btn-primary" id="gform_submit_button_' . $form['id'] . '" value="' . $form['button']['text'] . '">';
+}

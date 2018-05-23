@@ -84,10 +84,10 @@
 <section id="get-started" class="get-started text-center">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h2>Get Started Today</h2>
-        <p>Post your free job and find talented contractors for your projects. All 100% free.</p>
-        <a href="#" class="btn btn-outline-light">Apply Now</a>
+      <div class="col-lg-8 mx-auto">
+        <h2>Find your next job now</h2>
+        <p>Really? Yup. You’re looking for a job. We’ve got it. You haven’t worked with a staffing agency like this before!</p>
+        <a href="<?php echo get_the_permalink( '24' ) ?>" class="btn btn-outline-light">Apply Now</a>
         <a href="#" class="btn btn-outline-light">Make a call</a>
       </div>
     </div>

@@ -38,6 +38,9 @@ p {
   font-size: 2rem;
 }
 
+.bg-primary {
+  background-color: $primary-color !important;
+}
 .bg-light {
   background-color: $bg-light !important;
 }
@@ -456,24 +459,161 @@ p {
   }
 }
 
-input,
-.form-control {
-  height: 4.4rem;
-  border-radius: 0.4rem;
-  font-size: 1.4rem;
-  &:focus,
-  &.form-control:focus {
-    border-color: $primary-color;
-    box-shadow: none;
-    outline: none;
+/* CONTACT PAGE */
+.contact-info {
+  & h4 {
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+  & p {
+    color: rgba(255,255,255,.8);
+    font-size: 1.6rem;
+  }
+  & a {
+    color: rgba(255,255,255,.8);
+    &:hover {
+      color: rgba(255,255,255,1);
+    }
+  }
+
+
+  & .contact-socials {
+    & a {
+      color: rgba(255,255,255,.6);
+      font-size: 20px;
+      padding: 0.5rem;
+      &:hover {
+        color: #fff;
+      }
+    }
   }
 }
+
+/* Sign In & Sign Up */
+.page-template-template-contact {
+  background-color: #e7ecf3 !important;
+  padding-top: 0 !important;
+}
+.page-template-template-signin #header,
+.page-template-template-contact #header {
+  border-bottom: 1px solid transparent;
+  background-color: #e7ecf3 !important;
+  box-shadow: none !important;
+  position: relative !important;
+}
+.page-template-template-signin #footer,
+.page-template-template-contact #footer {
+  margin-top: 0;
+}
+
+.signup-page .header {
+  padding: 0;
+  margin-bottom: -1rem;
+  text-align: center;
+}
+.signup-page .header a{
+  color: #ce2028;
+}
+.signup-page .header a:hover {
+  color: #1e3160;
+}
+.signup-page .header h1{
+  margin-bottom: 50px;
+  font-weight: 900;
+  color: #ce2028;
+}
+
+
+.signup-page .signup-form {
+  background-color: #fff;
+}
+.signup-page .form-content {
+  text-indent: -999999px;
+  max-width: 780px;
+  margin: auto;
+  background-color: #fff;
+  padding: 5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-100px);
+  & h1 {
+    font-size: 3.6rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    & span {
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
+}
+
+.signup-page .form-content > div {
+  text-indent: 0;
+}
+
+
+// input,
+// .form-control {
+//   height: 4.4rem;
+//   border-radius: 0.4rem;
+//   font-size: 1.4rem;
+//   &:focus,
+//   &.form-control:focus {
+//     border-color: $primary-color;
+//     box-shadow: none;
+//     outline: none;
+//   }
+// }
 button,
 .btn {
   margin-left: -0.1rem;
   font-size: 1.6rem;
   position: relative;
   z-index: 1;
+  padding: 1rem 3rem;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+
+}
+.btn-primary {
+  border-color: transparent;
+  background: $primary-color;
+  color: #fff;
+}
+
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+input[type=input],
+textarea,
+select {
+  border: 2px solid #eee;
+  border-radius: 3px;
+  /* width: 100%!important; */
+  padding: 5px 20px !important;
+  height: 44px;
+  background: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  max-height: 15rem;
+}
+
+.gfield_label,
+.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+  display: none !important;
 }
 
 
