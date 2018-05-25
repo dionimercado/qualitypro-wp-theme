@@ -22,13 +22,17 @@ get_header()
           <div class="col-md-5">
             <div class="bg-primary h-100 text-white p-4 p-lg-5 contact-info">
               <h4 class="mb-4"><?php _e( 'Contact Information' ) ?></h4>
-              <p class="d-none d-md-block">Changing lives, aligning destinies<br> and uplifting communities.</p>
               <p>
                 278 Broadway<br />
                 Elmwood Park, NJ
               </p>
               <p><a href="mailto:info@qualityprofessional.us"><i class="fas fa-envelope"></i> info@qualityprofessional.us</a></p>
               <p><a href="tel:+19176868373"><i class="fas fa-phone" style="transform: rotate(115deg);"></i> (201) 797-0590</a></p>
+              <hr class="my-5" style="border-color: rgba(255,255,255,.1)" />
+              <h4 class="mb-4"><?php _e( 'Office Hours' ) ?></h4>
+              <p><i class="far fa-clock"></i> Monday – Friday 5am – 5pm</p>
+              <p><i class="far fa-clock"></i> Saturday 7am – 4pm</p>
+              <p><i class="far fa-clock"></i> Sunday <span class="text-white">closed</span></p>
               <hr class="my-5" style="border-color: rgba(255,255,255,.1)" />
               <h4 class="mb-4"><?php _e( 'Get in touch' ) ?></h4>
               <ul class="contact-socials list-inline">

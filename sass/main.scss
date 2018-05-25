@@ -76,6 +76,12 @@ p {
     height: 0.2rem;
     background-color: $primary-color;
   }
+  &.text-left {
+    &::after {
+      left: 0;
+      margin-left: 0;
+    }
+  }
 }
 
 
@@ -520,7 +526,8 @@ p {
 .signup-page .header h1{
   margin-bottom: 50px;
   font-weight: 900;
-  color: #ce2028;
+  font-size: 3.6rem;
+  color: $primary-color;
 }
 
 
@@ -615,7 +622,10 @@ textarea {
 .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
   display: none !important;
 }
-
+.ginput_container_fileupload {
+  border: 0.1rem dashed #ddd;
+  padding: 2rem;
+}
 
 @media screen and (max-width: 768px) {
 

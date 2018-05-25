@@ -57,6 +57,9 @@ p {
     width: 5rem;
     height: 0.2rem;
     background-color: #123088; }
+  .block-header.text-left::after {
+    left: 0;
+    margin-left: 0; }
 
 #header {
   padding: 0;
@@ -421,7 +424,8 @@ p {
 .signup-page .header h1 {
   margin-bottom: 50px;
   font-weight: 900;
-  color: #ce2028; }
+  font-size: 3.6rem;
+  color: #123088; }
 
 .signup-page .signup-form {
   background-color: #fff; }
@@ -492,6 +496,10 @@ textarea {
 .gfield_label,
 .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
   display: none !important; }
+
+.ginput_container_fileupload {
+  border: 0.1rem dashed #ddd;
+  padding: 2rem; }
 
 @media screen and (max-width: 768px) {
   h2 {
