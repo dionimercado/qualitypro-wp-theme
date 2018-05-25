@@ -557,19 +557,15 @@ p {
   text-indent: 0;
 }
 
+/* BLOG */
+.blog-section {
+  margin: 5rem 0;
+  & .card-text p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
 
-// input,
-// .form-control {
-//   height: 4.4rem;
-//   border-radius: 0.4rem;
-//   font-size: 1.4rem;
-//   &:focus,
-//   &.form-control:focus {
-//     border-color: $primary-color;
-//     box-shadow: none;
-//     outline: none;
-//   }
-// }
 button,
 .btn {
   margin-left: -0.1rem;
