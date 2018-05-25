@@ -557,6 +557,24 @@ p {
   text-indent: 0;
 }
 
+/* PAGE */
+.page-section {
+  margin-bottom: 5rem;
+  & > header {
+    background: $primary-color url('../images/stripe-bg.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    & h1 {
+      color: #fff;
+      font-size: 4rem;
+    }
+  }
+}
+
 /* BLOG */
 .blog-section {
   margin: 5rem 0;
@@ -753,6 +771,18 @@ textarea {
       font-size: 1.6rem;
       margin: 0.5rem;
       padding: 0.5rem 2rem;
+    }
+  }
+
+  .page-section {
+    margin-bottom: 5rem;
+    & > header {
+      min-height: 12rem;
+      margin-bottom: 3rem;
+      & h1 {
+        color: #fff;
+        font-size: 3rem;
+      }
     }
   }
 
